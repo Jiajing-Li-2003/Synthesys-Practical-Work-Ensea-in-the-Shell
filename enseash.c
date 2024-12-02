@@ -1,5 +1,9 @@
 #include <unistd.h>
 #include <string.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     char command[128]; // Buffer for user command 
@@ -30,6 +34,26 @@ int main() {
         // Exit if user write "exit"
         if (strcmp(command, "exit") == 0) {
             break;
+        }
+
+        // Create a child process to execute the command
+        pid_t pid = fork();
+        if (pid == -1) {
+            perror("fork");
+            continue;
+        }
+
+        if (pid == 0) {
+            // Code for the child process 
+            execlp(command, command, NULL);
+            // If execlp fails (if the command isn't installed)
+            perror("execlp");
+            exit(EXIT_FAILURE);
+        } 
+        else {
+            // Code for the parent process
+            int status;
+            wait(&status); // Wait for the child process to finish
         }
 
       
