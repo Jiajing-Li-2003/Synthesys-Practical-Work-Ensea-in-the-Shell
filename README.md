@@ -1,7 +1,7 @@
 # Synthesys-Practical-Work-Ensea-in-the-Shell
 TP 1 Major Computer science
 
-First we created a clone of our repository on a consol by following these step 
+First we created a clone of our repository on a terminal by following these step 
 ![image](https://github.com/user-attachments/assets/1cd57b3e-f659-4b36-a4e3-92b39c3e3b00)
 
 For every questions, we used the VM given by ENSEA, in order to work on a Linux environnement. 
