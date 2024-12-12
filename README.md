@@ -16,3 +16,7 @@ The tiny shell appears.
 
 Question 4: test of stop signal
 ![image](https://github.com/user-attachments/assets/7cb94167-d679-4617-8d71-d68ee502774f)
+
+Here we launch the 'yes' function that write infinite 'y'. Then on another terminal, we type the line :
+'ps aux | grep yes' which allows us to know the IP adress of the child. 
+We can now send a signal with the command kill, here 'kill -9 1949' with the IP adress 1949. When executed, the infinite y on the other terminal is stopped, and the number of the signal is displayed, here 9.
