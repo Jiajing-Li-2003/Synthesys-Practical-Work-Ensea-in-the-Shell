@@ -2,7 +2,9 @@
 TP 1 Major Computer science
 
 For every questions, we used the VM given by ENSEA, in order to work on a Linux environnement. 
+
 We used Geany to work on a clean IDE, not on a simple file like we started, with no colors. 
+
 We created the folder Synthesys-Practical-Work-Ensea-in-the-shell, where we stored every file for every question, and the makefile.
 
 On a terminal, we typed 'ls' to see all the directory, and by typing 'cd Synthesys-Practical-Work-Ensea-in-the-shell', we now are in the right folder. 
@@ -10,8 +12,14 @@ On a terminal, we typed 'ls' to see all the directory, and by typing 'cd Synthes
 For every question, once the code seems right, we have to type 'make'. Then we have to compile the file we want by typing : 
 'gcc -o enseash_Qx enseash_Qx.c' (with Qx the number of the question)
 
-Then we need to call the file by typing its name : 'enseash_Qx'
+Then we need to call the file by typing its name : './enseash_Qx'
 The tiny shell appears.
+
+To send the last version of a question, we use the command 'git add enseash_Qx.c'.
+
+Then we enter the commit by typing 'commit -m 'Question x' '
+
+And finally we push the file with 'git push'
 
 
 Question 4: test of stop signal
