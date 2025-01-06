@@ -20,7 +20,7 @@ The tiny shell appears.
 
 To send the last version of a question, we use the command 'git add enseash_Qx.c'.
 
-Then we enter the commit by typing 'commit -m 'Question x' '
+Then we enter the commit by typing 'git commit -m 'Question x' '
 
 And finally we push the file with 'git push'
 
